@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HiLight</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="about-body">
+	<div class="preloader" id="page-preloader">
+		<div class="loader">
+			<span id="load_perc">0%</span>
+		</div>
+		<style>
+			.preloader {
+				overflow: hidden;
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background: black;
+				z-index: 999999;
+				opacity: 1;
+				visibility: visible;
+				transition: 1s all;
+
+				.loader {
+					width: fit-content;
+					text-align: center;
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					font-weight: 300;
+					font-size: 24px;
+					line-height: 29px;
+					color: #fafafa;
+
+					&::before {
+						content: "HI";
+					}
+				}
+
+				&.done {
+					opacity: 0;
+					visibility: hidden;
+				}
+			}
+		</style>
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container-big">
+				<a href="index.html" class="header__logo">LOGO</a>
+				<div class="header__menu menu">
+					<a class="menu__icon burger-menu" data-da=".header__actions,767"><span class="icon-menu"></span><span class="burger-text">Menu</span></a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a class="menu__link" href="projects.html">Projects</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="about.html">About us</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="news.html">Blog</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="contact.html">Contacts</a>
+							</li>
+
+						</ul>
+						<div class="button-set">
+
+						</div>
+
+						<div class="info-first-section">
+							<ul class="social-links">
+								<li class="social-links__item">
+									<a href="">Fb</a>
+								</li>
+								<li class="social-links__item">
+									<a href="">In</a>
+								</li>
+								<li class="social-links__item">
+									<a href="">Be</a>
+								</li>
+							</ul>
+							<div class="info-city">
+								<div class="button-menu">
+									<span class="icon-maps-and-flags"></span>
+									<select class="select-city" name="city">
+
+										<option class="select-city__background" value="value1">Kyiv</option>
+										<option class="select-city__background" value="value2" selected>Berlin</option>
+										<option class="select-city__background" value="value3">Kharkiv</option>
+									</select>
+								</div>
+								<div class="info-city__mail-tel">
+									<a href="tel:+380935705222">+380935705222</a>
+									<a class="info-mail" href="mailto:info@hi-light.pl">info@hi-light.pl</a>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<div class="header__actions">
+					<button class="header__button-language button-language">En</button>
+					<button data-popup="#popup" data-da=".button-set,767" class="header__button button">Send Request</button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="component-5">
+				<div class="full-screen">
+					<picture><source srcset="img/main-slider-img-1.webp" type="image/webp"><img src="img/main-slider-img-1.png" alt="img"></picture>
+					<div class="center-text">
+						<h3 class="title">Company Philosophy</h3>
+						<p class="description">The basic philosophy of our studio is to create individual, aesthetically stunning
+							solutions for our customers by lightning-fast development of projects employing unique styles and
+							architecture. </p>
+					</div>
+				</div>
+			</div>
+			<div class="component-6">
+				<div class="component-6__container-big">
+					<div class="component-6__slider">
+						<div class="component-6__text-block">
+							<h3 class="title">Company Philosophy </h3>
+							<p class="description">The basic philosophy of our studio is to create individual, aesthetically
+								stunning
+								solutions for our customers by lightning-fast development of projects employing unique styles and
+								architecture. </p>
+							<div class="pagination-block">
+								<div class="swiper-button-prev">
+									<strong class="prev-slide"></strong>
+								</div>
+								<div class="swiper-pagination swiper-pagination-progressbar"></div>
+								<div class="swiper-button-next">
+									<strong class="next-slide"></strong>
+								</div>
+							</div>
+						</div>
+						<div class="about-swiper mySwiper">
+							<div class="about-wrapper swiper-wrapper">
+								<div class="about-slide swiper-slide">
+									<picture><source srcset="img/main-slider-img-5.webp" type="image/webp"><img class="about-slide__img" src="img/main-slider-img-5.png" alt="img"></picture>
+								</div>
+								<div class="about-slide swiper-slide">
+									<picture><source srcset="img/main-slider-img-3.webp" type="image/webp"><img class="about-slide__img" src="img/main-slider-img-3.png" alt="img"></picture>
+								</div>
+								<div class="about-slide swiper-slide">
+									<picture><source srcset="img/main-slider-img-4.webp" type="image/webp"><img class="about-slide__img" src="img/main-slider-img-4.png" alt="img"></picture>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="component-8">
+				<div class="component-8__absolute-img">
+					<picture><source srcset="img/kitchen4.webp" type="image/webp"><img class="img" src="img/kitchen4.png" alt="img"></picture>
+				</div>
+				<div class="component-8__container-big">
+					<div class="component-8__left-block">
+						<picture><source srcset="img/image9.webp" type="image/webp"><img class="img" src="img/image9.png" alt="img"></picture>
+					</div>
+					<div class="component-8__right-block">
+						<ul class="component-8__list-info">
+							<li class="component-8__item">
+								<p class="component-8__item-title">6</p>
+								<p class="component-8__item-description">years
+									expertise</p>
+							</li>
+							<li class="component-8__item">
+								<p class="component-8__item-title">100+</p>
+								<p class="component-8__item-description">completed
+									projects</p>
+							</li>
+							<li class="component-8__item">
+								<p class="component-8__item-title">25+</p>
+								<p class="component-8__item-description">companies
+									cooperate</p>
+							</li>
+							<li class="component-8__item">
+								<p class="component-8__item-title">2014</p>
+								<p class="component-8__item-description">year of
+									market entry</p>
+							</li>
+						</ul>
+						<p class="description">
+							The basic philosophy of our studio is to create individual, aesthetically stunning solutions for our
+							customers by lightning-fast development of projects employing unique styles and architecture.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="component-9">
+				<div class="component-9__container-big">
+					<div class="component-9__absolute-block">
+						<picture><source srcset="img/image10.webp" type="image/webp"><img class="img" src="img/image10.png" alt="img"></picture>
+					</div>
+					<div class="component-9__left-block">
+						<h3 class="title">Roman Viktorovich</h3>
+						<p class="component-9__position">Founder and CEO of Hilight</p>
+						<p class="component-9__quote">We can also help you create harmony out of seemingly completely incompatible
+							elements in the interior or the exterior design. </p>
+					</div>
+					<div class="component-9__right-block">
+						<div class="component-9__picture">
+							<picture><source srcset="img/image11.webp" type="image/webp"><img class="img" src="img/image11.png" alt="img"></picture>
+						</div>
+						<ul class="component-9__list">
+							<div class="component-9__item">
+								<p class="item-title">5</p>
+								<p class="item-description">companies
+									cooperate</p>
+							</div>
+							<div class="component-9__item">
+								<p class="item-title">4</p>
+								<p class="item-description">year of
+									market entry</p>
+							</div>
+							<div class="component-9__item">
+								<p class="item-title">3</p>
+								<p class="item-description">companies
+									cooperate</p>
+							</div>
+						</ul>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisl sit risus
+							pharetra nisl metus aliquet. Nibh eu posuere sodales sem tellus. Vulputate est nisl convallis sed. Fames
+							in dignissim erat fermentum sed sed. In massa, adipiscing aliquet mi semper facilisis ornare nisi. Non
+							elit amet enim at cursus mauris senectus dolor ac. Egestas lectus in praesent mi arcu. Vitae nisl
+							viverra enim nulla at. Fusce porta elementum quis.</p>
+					</div>
+				</div>
+			</div>
+			<div class="lorem-ipsum-block">
+				<h2 class="lorem-ipsum-block__title"></h2>
+				<p class="lorem-ipsum-block__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+					ullamcorper eu mauris vitae posuere. </p>
+				<ul class="lorem-ipsum-block__list-picture">
+					<li class="lorem-ipsum-block__item">
+						<picture><source srcset="img/lorem-img-1.webp" type="image/webp"><img class="lorem-ipsum-block__img" src="img/lorem-img-1.png" alt="img"></picture>
+					</li>
+					<li class="lorem-ipsum-block__item">
+						<picture><source srcset="img/main-slider-img-1.webp" type="image/webp"><img class="lorem-ipsum-block__img" src="img/main-slider-img-1.png" alt="img"></picture>
+					</li>
+					<li class="lorem-ipsum-block__item">
+						<picture><source srcset="img/main-slider-img-4.webp" type="image/webp"><img class="lorem-ipsum-block__img" src="img/main-slider-img-4.png" alt="img"></picture>
+					</li>
+					<li class="lorem-ipsum-block__item">
+						<picture><source srcset="img/kitchen.webp" type="image/webp"><img class="lorem-ipsum-block__img" src="img/kitchen.png" alt="img"></picture>
+					</li>
+					<li class="lorem-ipsum-block__item">
+						<picture><source srcset="img/kitchen2.webp" type="image/webp"><img class="lorem-ipsum-block__img" src="img/kitchen2.png" alt="img"></picture>
+					</li>
+					<li class="lorem-ipsum-block__item">
+						<picture><source srcset="img/main-slider-img-6.webp" type="image/webp"><img class="lorem-ipsum-block__img" src="img/main-slider-img-6.png" alt="img"></picture>
+					</li>
+					<li class="lorem-ipsum-block__item">
+						<picture><source srcset="img/kitchen3.webp" type="image/webp"><img class="lorem-ipsum-block__img" src="img/kitchen3.png" alt="img"></picture>
+					</li>
+					<li class="lorem-ipsum-block__item">
+						<picture><source srcset="img/kitchen3.webp" type="image/webp"><img class="lorem-ipsum-block__img" src="img/kitchen3.png" alt="img"></picture>
+					</li>
+				</ul>
+			</div>
+			<div class="component-7">
+				<div class="component-7__container-big">
+					<div class="component-7__left-block">
+						<h3 class="title">Do you want to work in our team?</h3>
+						<form class="send-mail component-7__send-mail">
+							<input class="send-mail__input" type="email" id="Email" placeholder=" ">
+							<label class="absolute-text-input" for="Email">Email</label>
+							<button type="submit" class="absolute-button-input"></button>
+						</form>
+					</div>
+					<div class="component-7__right-block">
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu
+							mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam.</p>
+						<div class="component-7__right-bottom-block">
+							<a href="mailto:info@gmail.com">info@gmail.com</a>
+							<ul class="social-links">
+								<li class="social-links__item">
+									<a href="">Fb</a>
+								</li>
+								<li class="social-links__item">
+									<a href="">In</a>
+								</li>
+								<li class="social-links__item">
+									<a href="">Be</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container-big">
+				<p class="footer__text">© Copyright 2018. All rights reserved</p>
+				<div class="right-block">
+					<p class="footer__text">Made with love in</p>
+					<div class="footer__picture">
+						<img class="footer__img-1" src="img/footer-img.svg" alt="img">
+						<img class="footer__img-2" src="img/footer-img-2.svg" alt="img">
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<button data-close type="button" class="popup__close"></button>
+			<div class="popup__content">
+
+				<form class="form-popup popup__form active" id="form" accept="#">
+					<div class="form-popup__first-block">
+						<h2 class="form-popup__title"></h2>
+						<ul class="form-popup__list">
+							<li class="form-popup__item">
+								<input class="form-popup__input-text" id="Name" type="text" placeholder=" ">
+								<label class="form-popup__name-input form-popup__absolute" for="Name">Name</label>
+							</li>
+							<li class="form-popup__item">
+								<input class="form-popup__input-text" id="LastName" type="text" placeholder=" ">
+								<label class="form-popup__name-input form-popup__absolute" for="LastName">Last name</label>
+							</li>
+							<li class="form-popup__item">
+								<input class="form-popup__input-text" id="Phone" type="tel" name="phone_number" placeholder=" ">
+								<label class="form-popup__name-input form-popup__absolute " for="Phone">Phone</label>
+							</li>
+							<li class="form-popup__item">
+								<input class="form-popup__input-text" id="YourCity" type="text" placeholder=" ">
+								<label class="form-popup__name-input form-popup__absolute" for="YourCity">Your city</label>
+							</li>
+							<li class="form-popup__item">
+								<input class="form-popup__input-text _req _email" id="Email" type="email" placeholder=" ">
+								<label class="form-popup__name-input form-popup__absolute" for="Email">Email</label>
+							</li>
+							<li class="form-popup__item">
+								<select class="form-popup__input-text PropertyType" id="PropertyType" placeholder=" ">
+									<option selected class="btn default"></option>
+									<option class="btn" value="Type 1">Type 1</option>
+									<option class="btn" value="Type 2">Type 2</option>
+								</select>
+								<label class="form-popup__name-input form-popup__absolute" for="PropertyType">Property type</label>
+							</li>
+							<li class="form-popup__item-textarea form-popup__item">
+								<textarea class="form-popup__input-text" name="" id="YourComment" cols="30" rows="1" placeholder=" "></textarea>
+								<label class="form-popup__name-input form-popup__absolute" for="YourComment">Your comment</label>
+							</li>
+						</ul>
+					</div>
+					<div class="form-popup__second-block">
+						<div class="area-popup form-popup__area">
+							<p class="form-popup__name-input">Area(m2)</p>
+							<div class="area-popup__radio">
+								<label class="button-radio">to 50
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="button-radio">50-150
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="button-radio">150-250
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="button-radio">250-400
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="button-radio">400-600
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="button-radio">600-800
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="button-radio">800-1000
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="button-radio">1000+
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-popup__last-block">
+						<div class="form-popup__form-send">
+							<div class="add-file">
+								<input type="file" id="upload-file">
+								<button type="button" id="upload-btn">+</button>
+								<div class="add-file__text">
+									<p id="upload-text" class="add-file__title">Attach your file</p>
+									<p class="add-file__description">File size not more than 10 MB</p>
+								</div>
+							</div>
+							<button type="submit" class="button form-popup__button">Send Request</button>
+						</div>
+						<p class="form-popup__description">It is a long established fact that a reader will be distracted by
+							the readable content of a page <span class="underline">when looking</span> at its layout. The point of using Lorem Ipsum is
+							that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+							content here', making it look like readable English.</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="popup-complite" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<button data-close type="button" class="popup__close"></button>
+			<div class="popup__content">
+				<div class="popup-complite">
+					<h2 class="popup-complite__title">Thank you for your message!</h2>
+					<p class="popup-complite__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere.
+						Ut
+						at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.</p>
+					<button class="button popup-complite__button" data-popup="#popup">Send again</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.js"></script>
+</body>
+
+</html>

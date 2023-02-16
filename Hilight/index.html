@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Studio of Interiors</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="main-body dark">
+	<div class="preloader" id="page-preloader">
+		<div class="loader">
+			<span id="load_perc">0%</span>
+		</div>
+		<style>
+			.preloader {
+				overflow: hidden;
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background: black;
+				z-index: 999999;
+				opacity: 1;
+				visibility: visible;
+				transition: 1s all;
+
+				.loader {
+					width: fit-content;
+					text-align: center;
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					font-weight: 300;
+					font-size: 24px;
+					line-height: 29px;
+					color: #fafafa;
+
+					&::before {
+						content: "HI";
+					}
+				}
+
+				&.done {
+					opacity: 0;
+					visibility: hidden;
+				}
+			}
+		</style>
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container-big">
+				<a href="index.html" class="header__logo">LOGO</a>
+				<div class="header__menu menu">
+					<a class="menu__icon burger-menu" data-da=".header__actions,767"><span class="icon-menu"></span><span class="burger-text">Menu</span></a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a class="menu__link" href="projects.html">Projects</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="about.html">About us</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="news.html">Blog</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="contact.html">Contacts</a>
+							</li>
+
+						</ul>
+						<div class="button-set">
+
+						</div>
+
+						<div class="info-first-section">
+							<ul class="social-links">
+								<li class="social-links__item">
+									<a href="">Fb</a>
+								</li>
+								<li class="social-links__item">
+									<a href="">In</a>
+								</li>
+								<li class="social-links__item">
+									<a href="">Be</a>
+								</li>
+							</ul>
+							<div class="info-city">
+								<div class="button-menu">
+									<span class="icon-maps-and-flags"></span>
+									<select class="select-city" name="city">
+
+										<option class="select-city__background" value="value1">Kyiv</option>
+										<option class="select-city__background" value="value2" selected>Berlin</option>
+										<option class="select-city__background" value="value3">Kharkiv</option>
+									</select>
+								</div>
+								<div class="info-city__mail-tel">
+									<a href="tel:+380935705222">+380935705222</a>
+									<a class="info-mail" href="mailto:info@hi-light.pl">info@hi-light.pl</a>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<div class="header__actions">
+					<button class="header__button-language button-language">En</button>
+					<button data-popup="#popup" data-da=".button-set,767" class="header__button button">Send Request</button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="component-4">
+				<div class="wrapper-page">
+					<section class="fullscreen-slider">
+						<div class="fullscreen-slider__body">
+							<div class="slider-main">
+								<div class="slider-main__wrapper swiper-wrapper">
+									<div class="slider-main__slide swiper-slide">
+										<div class="slider-main__picture"> <picture><source srcset="img/main-slider-img-1.webp" type="image/webp"><img class="slider-main__img" src="img/main-slider-img-1.png" alt=""></picture></div>
+									</div>
+									<div class="slider-main__slide swiper-slide">
+										<div class="slider-main__picture"> <picture><source srcset="img/main-slider-img-3.webp" type="image/webp"><img class="slider-main__img" src="img/main-slider-img-3.png" alt=""></picture></div>
+									</div>
+									<div class="slider-main__slide swiper-slide">
+										<div class="slider-main__picture"> <picture><source srcset="img/main-slider-img-4.webp" type="image/webp"><img class="slider-main__img" src="img/main-slider-img-4.png" alt=""></picture></div>
+									</div>
+									<div class="slider-main__slide swiper-slide">
+										<div class="slider-main__picture"> <picture><source srcset="img/main-slider-img-5.webp" type="image/webp"><img class="slider-main__img" src="img/main-slider-img-5.png" alt=""></picture></div>
+									</div>
+								</div>
+								<div class="wrapper-page__absolute-block">
+									<div class="wrapper-page__title-block">
+										<p class="wrapper-page__title">Thoughtful
+											making of space</p>
+										<a class="wrapper-page__button-link button-link component-4__button-link" href="one-project.html">Discover more</a>
+									</div>
+									<div class="pagination-block">
+										<div class="swiper-button-prev">
+											<strong class="prev-slide"></strong>
+										</div>
+										<div class="swiper-pagination swiper-pagination-progressbar"></div>
+										<div class="swiper-button-next">
+											<strong class="next-slide"></strong>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="wrapper-page__text-vertical">
+							<p class="wrapper-page__next-project">Next Project</p>
+							<p class="wrapper-page__next-project-big">Perfect
+								proportions</p>
+						</div>
+						<div class="info__container-big">
+
+							<div class="info-first-section">
+								<ul class="social-links">
+									<li class="social-links__item">
+										<a href="">Fb</a>
+									</li>
+									<li class="social-links__item">
+										<a href="">In</a>
+									</li>
+									<li class="social-links__item">
+										<a href="">Be</a>
+									</li>
+								</ul>
+								<div class="info-city">
+									<div class="button-menu">
+										<span class="icon-maps-and-flags"></span>
+										<select class="select-city" name="city">
+
+											<option class="select-city__background" value="value1">Kyiv</option>
+											<option class="select-city__background" value="value2" selected>Berlin</option>
+											<option class="select-city__background" value="value3">Kharkiv</option>
+										</select>
+									</div>
+									<div class="info-city__mail-tel">
+										<a href="tel:+380935705222">+380935705222</a>
+										<a class="info-mail" href="mailto:info@hi-light.pl">info@hi-light.pl</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div class="component-3">
+				<div class="component-3__container-big">
+					<div class="absolute-title-block">
+						<hr>
+						<p class="absolute-title-text">
+							About
+						</p>
+					</div>
+					<div class="component-3__container-min">
+						<div class="component-3__text-block">
+							<h3 class="title component-3__title">Company Philosophy</h3>
+							<p class="description component-3__description">The basic philosophy of our studio is to create
+								individual,
+								aesthetically
+								stunning solutions for our customers by lightning-fast development of projects employing
+								unique
+								styles and architecture. Even if you don't have a ready sketch of what you want - we will
+								help you
+								get the result.</p>
+							<p class="description">We can also help you create harmony out of seemingly completely
+								incompatible
+								elements in the interior or the exterior design. Do you want to combine classics and
+								abstract art?
+								Modern and retro? Love everything associated with the 1940's? No problem! </p>
+							<a class="title-text__button-link button-link" href="#">Discover more</a>
+							<div class="component-3__picture-block">
+								<div class="component-3__picture">
+									<picture><source srcset="img/kitchen4.webp" type="image/webp"><img src="img/kitchen4.png" alt="kitchen"></picture>
+								</div>
+							</div>
+						</div>
+						<div class="component-3__last-block">
+							<div class="component-3__pictures-block">
+								<div class="component-3__picture-1">
+									<picture><source srcset="img/kitchen5.webp" type="image/webp"><img src="img/kitchen5.png" alt="img" class="component-3__img"></picture>
+								</div>
+								<div class="component-3__picture-2">
+									<picture><source srcset="img/main-slider-img-4.webp" type="image/webp"><img src="img/main-slider-img-4.png" alt="img" class="component-3__img"></picture>
+								</div>
+							</div>
+							<p class="component-3__text">
+								We can also help you create harmony out of seemingly completely incompatible elements in
+								the interior or the exterior design.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="component-1">
+				<div class="component-1__container-big">
+					<div class="absolute-title-block">
+						<hr>
+						<p class="absolute-title-text">
+							Projects
+						</p>
+					</div>
+					<div class="component-1__container-min container">
+						<div class="component-1__title-block">
+							<h3 class="title component-1__title">Our Projects</h3>
+							<div class="component-1__text-block">
+								<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper
+									eu
+									mauris
+									vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.
+								</p>
+								<div id="filter-block" class="filter-block">
+									<button class="btn active" name="All"> House</button>
+									<button class="btn" name="Apartments"> Apartments</button>
+									<button class="btn" name="Commerce"> Commerce</button>
+									<button class="btn" name="Architecture"> Architecture</button>
+								</div>
+								<select name="select" class="select-filter">
+									<option selected class="btn active" name="House" value="all">House</option>
+									<option class="btn" name="Apartments" value="Apartments">Apartments</option>
+									<option class="btn" name="Commerce" value="Commerce">Commerce</option>
+									<option class="btn" name="Architecture" value="Architecture">Architecture</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<ul class="gallary-component-1 component-1__gallery">
+						<li class="gallary-component-1__item filterDiv Apartments">
+							<picture><source srcset="img/kitchen_Jack_cam1.webp" type="image/webp"><img src="img/kitchen_Jack_cam1.png" alt="img"></picture>
+							<a class="gallary-component-1__link" href="one-project.html"></a>
+							<div class="gallary-component-1__img-text">
+								<div class="up-text-component-1 gallary-component-1__up-text">
+									<p class="up-text-component-1__type">Lodz</p>
+									<p class="up-text-component-1__date">16.10.2018</p>
+									<p class="up-text-component-1__area">80 sq.m</p>
+								</div>
+								<div class="down-text-component-1 gallary-component-1__down-text">
+									<p class="title-img down-text-component-1__title-img">Eyewear store interior</p>
+									<p class="button-link down-text-component-1__button-link">Discover more</p>
+								</div>
+							</div>
+						</li>
+						<li class="gallary-component-1__item filterDiv Apartments">
+							<picture><source srcset="img/kitchen5.2.webp" type="image/webp"><img src="img/kitchen5.2.png" alt="img"></picture>
+							<a class="gallary-component-1__link" href="one-project.html"></a>
+							<div class="gallary-component-1__img-text">
+								<div class="up-text-component-1 gallary-component-1__up-text">
+									<p class="up-text-component-1__type">Lodz</p>
+									<p class="up-text-component-1__date">16.10.2018</p>
+									<p class="up-text-component-1__area">80 sq.m</p>
+								</div>
+								<div class="down-text-component-1 gallary-component-1__down-text">
+									<p class="title-img down-text-component-1__title-img">Minimalist style home</p>
+									<p class="button-link down-text-component-1__button-link">Discover more</p>
+								</div>
+							</div>
+						</li>
+						<li class="gallary-component-1__item gallary-component-1__big filterDiv">
+							<picture>
+								<source media="(max-width: 768px)" srcset="img/image7.png">
+								<source media="(min-width: 769px)" srcset="img/main-slider-img-3.png">
+								<img src="img/main-slider-img-3.png">
+							</picture>
+							<a class="gallary-component-1__link" href="one-project.html"></a>
+							<div class="gallary-component-1__img-text">
+								<div class="up-text-component-1 gallary-component-1__up-text">
+									<p class="up-text-component-1__type">Lodz</p>
+									<p class="up-text-component-1__date">16.10.2018</p>
+									<p class="up-text-component-1__area">80 sq.m</p>
+								</div>
+								<div class="down-text-component-1 gallary-component-1__down-text">
+									<p class="title-img down-text-component-1__title-img">Residence by the lighthouse</p>
+									<p class="button-link down-text-component-1__button-link">Discover more</p>
+								</div>
+							</div>
+						</li>
+						<li class="gallary-component-1__item filterDiv Commerce">
+							<picture><source srcset="img/image1.webp" type="image/webp"><img src="img/image1.png" alt="img"></picture>
+							<a class="gallary-component-1__link" href="one-project.html"></a>
+							<div class="gallary-component-1__img-text">
+								<div class="up-text-component-1 gallary-component-1__up-text">
+									<p class="up-text-component-1__type">Lodz</p>
+									<p class="up-text-component-1__date">16.10.2018</p>
+									<p class="up-text-component-1__area">80 sq.m</p>
+								</div>
+								<div class="down-text-component-1 gallary-component-1__down-text">
+									<p class="title-img down-text-component-1__title-img">Eyewear store interior</p>
+									<p class="button-link down-text-component-1__button-link">Discover more</p>
+								</div>
+							</div>
+						</li>
+						<li class="gallary-component-1__item filterDiv gallary-component-1__more">
+							<picture><source srcset="img/image1.webp" type="image/webp"><img class="gallary-component-1__picture title-img" src="img/image1.png" alt="img"></picture>
+							<a class="gallary-component-1__link" href="projects.html"></a>
+						</li>
+						<li class="gallary-component-1__item filterDiv Commerce">
+							<picture><source srcset="img/image6.webp" type="image/webp"><img src="img/image6.png" alt="img"></picture>
+							<a class="gallary-component-1__link" href="one-project.html"></a>
+							<div class="gallary-component-1__img-text">
+								<div class="up-text-component-1 gallary-component-1__up-text">
+									<p class="up-text-component-1__type">Lodz</p>
+									<p class="up-text-component-1__date">16.10.2018</p>
+									<p class="up-text-component-1__area">80 sq.m</p>
+								</div>
+								<div class="down-text-component-1 gallary-component-1__down-text">
+									<p class="title-img down-text-component-1__title-img">Residence by the lighthouse</p>
+									<p class="button-link down-text-component-1__button-link">Discover more</p>
+								</div>
+							</div>
+						</li>
+						<li class="gallary-component-1__item filterDiv gallary-component-1__big">
+							<picture>
+								<source media="(max-width: 768px)" srcset="img/image8.png">
+								<source media="(min-width: 769px)" srcset="img/main-slider-img-6.png">
+								<img src="img/main-slider-img-3.png">
+							</picture>
+							<a class="gallary-component-1__link" href="one-project.html"></a>
+							<div class="gallary-component-1__img-text">
+								<div class="up-text-component-1 gallary-component-1__up-text">
+									<p class="up-text-component-1__type">Lodz</p>
+									<p class="up-text-component-1__date">16.10.2018</p>
+									<p class="up-text-component-1__area">80 sq.m</p>
+								</div>
+								<div class="down-text-component-1 gallary-component-1__down-text">
+									<p class="title-img down-text-component-1__title-img">Residence by the lighthouse</p>
+									<p class="button-link down-text-component-1__button-link">Discover more</p>
+								</div>
+							</div>
+						</li>
+						<li class="gallary-component-1__item">
+							<picture><source srcset="img/main-slider-img-3.webp" type="image/webp"><img src="img/main-slider-img-3.png" alt="img"></picture>
+							<a class="gallary-component-1__link" href="one-project.html"></a>
+							<div class="gallary-component-1__img-text">
+								<div class="up-text-component-1 gallary-component-1__up-text">
+									<p class="up-text-component-1__type">Lodz</p>
+									<p class="up-text-component-1__date">16.10.2018</p>
+									<p class="up-text-component-1__area">80 sq.m</p>
+								</div>
+								<div class="down-text-component-1 gallary-component-1__down-text">
+									<p class="title-img down-text-component-1__title-img">Residence by the lighthouse</p>
+									<p class="button-link down-text-component-1__button-link">Discover more</p>
+								</div>
+							</div>
+						</li>
+						<li class="gallary-component-1__item">
+							<picture><source srcset="img/main-slider-img-3.webp" type="image/webp"><img src="img/main-slider-img-3.png" alt="img"></picture>
+							<a class="gallary-component-1__link" href="one-project.html"></a>
+							<div class="gallary-component-1__img-text">
+								<div class="up-text-component-1 gallary-component-1__up-text">
+									<p class="up-text-component-1__type">Lodz</p>
+									<p class="up-text-component-1__date">16.10.2018</p>
+									<p class="up-text-component-1__area">80 sq.m</p>
+								</div>
+								<div class="down-text-component-1 gallary-component-1__down-text">
+									<p class="title-img down-text-component-1__title-img">Residence by the lighthouse</p>
+									<p class="button-link down-text-component-1__button-link">Discover more</p>
+								</div>
+							</div>
+						</li>
+						<li class="gallary-component-1__item">
+							<picture><source srcset="img/main-slider-img-3.webp" type="image/webp"><img src="img/main-slider-img-3.png" alt="img"></picture>
+							<a class="gallary-component-1__link" href="one-project.html"></a>
+							<div class="gallary-component-1__img-text">
+								<div class="up-text-component-1 gallary-component-1__up-text">
+									<p class="up-text-component-1__type">Lodz</p>
+									<p class="up-text-component-1__date">16.10.2018</p>
+									<p class="up-text-component-1__area">80 sq.m</p>
+								</div>
+								<div class="down-text-component-1 gallary-component-1__down-text">
+									<p class="title-img down-text-component-1__title-img">Residence by the lighthouse</p>
+									<p class="button-link down-text-component-1__button-link">Discover more</p>
+								</div>
+							</div>
+						</li>
+						<li class="gallary-component-1__item">
+							<picture><source srcset="img/main-slider-img-3.webp" type="image/webp"><img src="img/main-slider-img-3.png" alt="img"></picture>
+							<a class="gallary-component-1__link" href="one-project.html"></a>
+							<div class="gallary-component-1__img-text">
+								<div class="up-text-component-1 gallary-component-1__up-text">
+									<p class="up-text-component-1__type">Lodz</p>
+									<p class="up-text-component-1__date">16.10.2018</p>
+									<p class="up-text-component-1__area">80 sq.m</p>
+								</div>
+								<div class="down-text-component-1 gallary-component-1__down-text">
+									<p class="title-img down-text-component-1__title-img">Residence by the lighthouse</p>
+									<p class="button-link down-text-component-1__button-link">Discover more</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<div class="component-2">
+				<div class="component-2__container-big">
+					<div class="absolute-title-block">
+						<hr>
+						<p class="absolute-title-text">
+							Make request
+						</p>
+					</div>
+					<div class="component-2__text-block">
+						<h3 class="title component-2__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+						<div class="component-2__description-block">
+							<p class="description component-2__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Aliquam ullamcorper eu mauris vitae posuere. Ut
+								at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.
+							</p>
+							<button data-popup="#popup" class="button component-2__button">Make request</button>
+						</div>
+					</div>
+					<ul class="gallary-component-2 component-2__gallary">
+						<li class="gallary-component-2__item">
+							<picture><source srcset="img/image4.webp" type="image/webp"><img src="img/image4.png" alt="img"></picture>
+						</li>
+						<li class="gallary-component-2__item">
+							<picture><source srcset="img/image2.webp" type="image/webp"><img src="img/image2.png" alt="img"></picture>
+						</li>
+						<li class="gallary-component-2__item">
+							<picture><source srcset="img/image1.webp" type="image/webp"><img src="img/image1.png" alt="img"></picture>
+						</li>
+						<li class="gallary-component-2__item">
+							<picture><source srcset="img/image3.webp" type="image/webp"><img src="img/image3.png" alt="img"></picture>
+						</li>
+						<li class="gallary-component-2__item">
+							<picture><source srcset="img/image5.webp" type="image/webp"><img src="img/image5.png" alt="img"></picture>
+						</li>
+						<li class="gallary-component-2__item">
+							<picture><source srcset="img/image4.webp" type="image/webp"><img src="img/image4.png" alt="img"></picture>
+						</li>
+						<li class="gallary-component-2__item">
+							<picture><source srcset="img/image2.webp" type="image/webp"><img src="img/image2.png" alt="img"></picture>
+						</li>
+						<li class="gallary-component-2__item">
+							<picture><source srcset="img/image1.webp" type="image/webp"><img src="img/image1.png" alt="img"></picture>
+						</li>
+						<li class="gallary-component-2__item">
+							<picture><source srcset="img/image3.webp" type="image/webp"><img src="img/image3.png" alt="img"></picture>
+						</li>
+						<li class="gallary-component-2__item">
+							<picture><source srcset="img/image5.webp" type="image/webp"><img src="img/image5.png" alt="img"></picture>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="lorem-ipsum-block">
+				<h2 class="lorem-ipsum-block__title"></h2>
+				<p class="lorem-ipsum-block__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+					ullamcorper eu mauris vitae posuere. </p>
+				<ul class="lorem-ipsum-block__list-picture">
+					<li class="lorem-ipsum-block__item">
+						<picture><source srcset="img/lorem-img-1.webp" type="image/webp"><img class="lorem-ipsum-block__img" src="img/lorem-img-1.png" alt="img"></picture>
+					</li>
+					<li class="lorem-ipsum-block__item">
+						<picture><source srcset="img/main-slider-img-1.webp" type="image/webp"><img class="lorem-ipsum-block__img" src="img/main-slider-img-1.png" alt="img"></picture>
+					</li>
+					<li class="lorem-ipsum-block__item">
+						<picture><source srcset="img/main-slider-img-4.webp" type="image/webp"><img class="lorem-ipsum-block__img" src="img/main-slider-img-4.png" alt="img"></picture>
+					</li>
+					<li class="lorem-ipsum-block__item">
+						<picture><source srcset="img/kitchen.webp" type="image/webp"><img class="lorem-ipsum-block__img" src="img/kitchen.png" alt="img"></picture>
+					</li>
+					<li class="lorem-ipsum-block__item">
+						<picture><source srcset="img/kitchen2.webp" type="image/webp"><img class="lorem-ipsum-block__img" src="img/kitchen2.png" alt="img"></picture>
+					</li>
+					<li class="lorem-ipsum-block__item">
+						<picture><source srcset="img/main-slider-img-6.webp" type="image/webp"><img class="lorem-ipsum-block__img" src="img/main-slider-img-6.png" alt="img"></picture>
+					</li>
+					<li class="lorem-ipsum-block__item">
+						<picture><source srcset="img/kitchen3.webp" type="image/webp"><img class="lorem-ipsum-block__img" src="img/kitchen3.png" alt="img"></picture>
+					</li>
+					<li class="lorem-ipsum-block__item">
+						<picture><source srcset="img/kitchen3.webp" type="image/webp"><img class="lorem-ipsum-block__img" src="img/kitchen3.png" alt="img"></picture>
+					</li>
+				</ul>
+			</div>
+
+		</main>
+		<div class="main__background-image">
+			<div class="body__container-big">
+				<div class="absolute-title-block">
+					<hr>
+					<p class="absolute-title-text">
+						Contacts
+					</p>
+				</div>
+				<div class="contact-info">
+					<div class="contact-info__first-block">
+						<h2 class="page-title"></h2>
+						<p class="page-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu
+							mauris vitae posuere. </p>
+					</div>
+					<ul class="second-block-contact-info contact-info__second-block">
+						<li class="second-block-contact-info__item second-block-contact-info__Kyiv">
+							<p class="second-block-contact-info__title">Kyiv</p>
+							<a class="second-block-contact-info__telephone" href="tel:(209) 555-0104">(209) 555-0104</a>
+							<a class="second-block-contact-info__address" href="#">6391 Elgin St. Celina,
+								Delaware 10299</a>
+						</li>
+						<li class="second-block-contact-info__item second-block-contact-info__Lviv">
+							<p class="second-block-contact-info__title">Lviv</p>
+							<a class="second-block-contact-info__telephone" href="tel:(209) 555-0104">(209) 555-0104</a>
+							<a class="second-block-contact-info__address" href="#">6391 Elgin St. Celina,
+								Delaware 10299</a>
+						</li>
+						<li class="second-block-contact-info__item second-block-contact-info__Kharkiv">
+							<p class="second-block-contact-info__title">Kharkiv</p>
+							<a class="second-block-contact-info__telephone" href="tel:(209) 555-0104">(209) 555-0104</a>
+							<a class="second-block-contact-info__address" href="#">6391 Elgin St. Celina,
+								Delaware 10299</a>
+						</li>
+						<li class="second-block-contact-info__item second-block-contact-info__Email">
+							<a href="mailto:info@gmail.com">info@gmail.com</a>
+							<ul class="social-links">
+								<li class="social-links__item">
+									<a href="">Fb</a>
+								</li>
+								<li class="social-links__item">
+									<a href="">In</a>
+								</li>
+								<li class="social-links__item">
+									<a href="">Be</a>
+								</li>
+							</ul>
+						</li>
+						<li class="second-block-contact-info__item second-block-contact-info__Button">
+							<button data-popup="#popup" class="button">Make request</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="footer__container-big">
+					<p class="footer__text">© Copyright 2018. All rights reserved</p>
+					<div class="right-block">
+						<p class="footer__text">Made with love in</p>
+						<div class="footer__picture">
+							<img class="footer__img-1" src="img/footer-img.svg" alt="img">
+							<img class="footer__img-2" src="img/footer-img-2.svg" alt="img">
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<button data-close type="button" class="popup__close"></button>
+			<div class="popup__content">
+
+				<form class="form-popup popup__form active" id="form" accept="#">
+					<div class="form-popup__first-block">
+						<h2 class="form-popup__title"></h2>
+						<ul class="form-popup__list">
+							<li class="form-popup__item">
+								<input class="form-popup__input-text" id="Name" type="text" placeholder=" ">
+								<label class="form-popup__name-input form-popup__absolute" for="Name">Name</label>
+							</li>
+							<li class="form-popup__item">
+								<input class="form-popup__input-text" id="LastName" type="text" placeholder=" ">
+								<label class="form-popup__name-input form-popup__absolute" for="LastName">Last name</label>
+							</li>
+							<li class="form-popup__item">
+								<input class="form-popup__input-text" id="Phone" type="tel" name="phone_number" placeholder=" ">
+								<label class="form-popup__name-input form-popup__absolute " for="Phone">Phone</label>
+							</li>
+							<li class="form-popup__item">
+								<input class="form-popup__input-text" id="YourCity" type="text" placeholder=" ">
+								<label class="form-popup__name-input form-popup__absolute" for="YourCity">Your city</label>
+							</li>
+							<li class="form-popup__item">
+								<input class="form-popup__input-text _req _email" id="Email" type="email" placeholder=" ">
+								<label class="form-popup__name-input form-popup__absolute" for="Email">Email</label>
+							</li>
+							<li class="form-popup__item">
+								<select class="form-popup__input-text PropertyType" id="PropertyType" placeholder=" ">
+									<option selected class="btn default"></option>
+									<option class="btn" value="Type 1">Type 1</option>
+									<option class="btn" value="Type 2">Type 2</option>
+									<option class="btn" value="Type 2">Type 3</option>
+									<option class="btn" value="Type 2">Type 4</option>
+								</select>
+								<label class="form-popup__name-input form-popup__absolute" for="PropertyType">Property type</label>
+							</li>
+							<li class="form-popup__item-textarea form-popup__item">
+								<textarea class="form-popup__input-text" name="" id="YourComment" cols="30" rows="1" placeholder=" "></textarea>
+								<label class="form-popup__name-input form-popup__absolute" for="YourComment">Your comment</label>
+							</li>
+						</ul>
+					</div>
+					<div class="form-popup__second-block">
+						<div class="area-popup form-popup__area">
+							<p class="form-popup__name-input">Area(m2)</p>
+							<div class="area-popup__radio">
+								<label class="button-radio">to 50
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="button-radio">50-150
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="button-radio">150-250
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="button-radio">250-400
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="button-radio">400-600
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="button-radio">600-800
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="button-radio">800-1000
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="button-radio">1000+
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-popup__last-block">
+						<div class="form-popup__form-send">
+							<div class="add-file">
+								<input type="file" id="upload-file">
+								<button type="button" id="upload-btn">+</button>
+								<div class="add-file__text">
+									<p id="upload-text" class="add-file__title">Attach your file</p>
+									<p class="add-file__description">File size not more than 10 MB</p>
+								</div>
+							</div>
+							<button type="submit" class="button form-popup__button">Send Request</button>
+						</div>
+						<p class="form-popup__description">It is a long established fact that a reader will be distracted by
+							the readable content of a page <span class="underline">when looking</span> at its layout. The point of using Lorem Ipsum is
+							that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+							content here', making it look like readable English.</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="popup-complite" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<button data-close type="button" class="popup__close"></button>
+			<div class="popup__content">
+				<div class="popup-complite">
+					<h2 class="popup-complite__title">Thank you for your message!</h2>
+					<p class="popup-complite__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere.
+						Ut
+						at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.</p>
+					<button class="button popup-complite__button" data-popup="#popup">Send again</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HiLight</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230102204316">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="one-project-body">
+	<div class="preloader" id="page-preloader">
+		<div class="loader">
+			<span id="load_perc">0%</span>
+		</div>
+		<style>
+			.preloader {
+				overflow: hidden;
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background: black;
+				z-index: 999999;
+				opacity: 1;
+				visibility: visible;
+				transition: 1s all;
+
+				.loader {
+					width: fit-content;
+					text-align: center;
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					font-weight: 300;
+					font-size: 24px;
+					line-height: 29px;
+					color: #fafafa;
+
+					&::before {
+						content: "HI";
+					}
+				}
+
+				&.done {
+					opacity: 0;
+					visibility: hidden;
+				}
+			}
+		</style>
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container-big">
+				<a href="index.html" class="header__logo">LOGO</a>
+				<div class="header__menu menu">
+					<a class="menu__icon burger-menu" data-da=".header__actions,767"><span class="icon-menu"></span><span class="burger-text">Menu</span></a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a class="menu__link" href="projects.html">Projects</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="about.html">About us</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="news.html">Blog</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="contact.html">Contacts</a>
+							</li>
+
+						</ul>
+						<div class="button-set">
+
+						</div>
+
+						<div class="info-first-section">
+							<ul class="social-links">
+								<li class="social-links__item">
+									<a href="">Fb</a>
+								</li>
+								<li class="social-links__item">
+									<a href="">In</a>
+								</li>
+								<li class="social-links__item">
+									<a href="">Be</a>
+								</li>
+							</ul>
+							<div class="info-city">
+								<div class="button-menu">
+									<span class="icon-maps-and-flags"></span>
+									<select class="select-city" name="city">
+
+										<option class="select-city__background" value="value1">Kyiv</option>
+										<option class="select-city__background" value="value2" selected>Berlin</option>
+										<option class="select-city__background" value="value3">Kharkiv</option>
+									</select>
+								</div>
+								<div class="info-city__mail-tel">
+									<a href="tel:+380935705222">+380935705222</a>
+									<a class="info-mail" href="mailto:info@hi-light.pl">info@hi-light.pl</a>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<div class="header__actions">
+					<button class="header__button-language button-language">En</button>
+					<button data-popup="#popup" data-da=".button-set,767" class="header__button button">Send Request</button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="component-10">
+				<div class="full-screen">
+					<picture>
+						<source media="(max-width: 525px)" srcset="img/image22.png">
+						<source media="(min-width: 526px)" srcset="img/main-slider-img-7.png">
+						<img class="img component-10__img" src="img/main-slider-img-7.png" alt="">
+					</picture>
+					<div class="component-10__container-big">
+						<div class="component-10__container-min">
+							<div class="component-10__text-block">
+								<h3 class="title">Residence by the lighthouse</h3>
+								<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper
+									eu
+									mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium
+									velit.
+								</p>
+								<ul class="component-10__list">
+									<li class="component-10__item">
+										<span class="icon-maps-and-flags"></span>
+										<p class="component-10__text">Lodz, Poland</p>
+									</li>
+									<li class="component-10__item">
+										<span class="icon-calendar"></span>
+										<p class="component-10__text">16.10.2018</p>
+									</li>
+									<li class="component-10__item">
+										<span class="icon-math"></span>
+										<p class="component-10__text">80 sq.m</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="component-16">
+							<p>Share:</p>
+							<ul>
+								<li><a href="#"><span class="icon-facebook"></span></a></li>
+								<li><a href="#"><span class="icon-twi"></span></a></li>
+								<li><a href="#"><span class="icon-linkedin"></span></a></li>
+								<li><a href="#"><span class="icon-link"></span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="component-11">
+				<div class="component-11__container-big">
+					<div class="component-11__container-min">
+						<h4 class="sub-title">Donec et ipsum nec quam posuere maximus eu in erat. Duis laoreet finibus consectetur.
+						</h4>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel gravida urna. Donec
+							blandit sapien eu diam ullamcorper euismod. Nam tempus pellentesque ligula ut aliquam. Donec et ipsum
+							nec quam posuere maximus eu in erat. Duis laoreet finibus consectetur. Nullam pulvinar ex sit amet leo
+							gravida, sed mattis enim vehicula. Duis purus nisl, consectetur ut est non, placerat eleifend turpis.
+							Duis auctor suscipit arcu. Aenean leo est, rutrum a eleifend eget, tempor nec urna. Proin finibus
+							lobortis arcu dictum convallis. Ut fermentum eu magna vel laoreet. In lacus augue, malesuada id elit sit
+							amet, varius imperdiet ex. Nullam blandit lobortis posuere:</p>
+						<a class="button-link component-11__button-link" href="#">Discover more</a>
+					</div>
+				</div>
+			</div>
+			<div class="component-12">
+				<div class="component-12__container-big">
+					<ul class="component-12__gallary">
+						<li class="component-12__item component-12__item-big">
+							<picture><source srcset="img/main-slider-img-5.webp" type="image/webp"><img src="img/main-slider-img-5.png" alt="img" class="img component-12__img"></picture>
+						</li>
+						<li class="component-12__item">
+							<picture><source srcset="img/image12.webp" type="image/webp"><img src="img/image12.png" alt="img" class="img component-12__img"></picture>
+						</li>
+						<li class="component-12__item">
+							<picture><source srcset="img/image13.webp" type="image/webp"><img src="img/image13.png" alt="img" class="img component-12__img"></picture>
+						</li>
+						<li class="component-12__item component-12__item-big">
+							<picture><source srcset="img/main-slider-img-4.webp" type="image/webp"><img src="img/main-slider-img-4.png" alt="img" class="img component-12__img"></picture>
+						</li>
+					</ul>
+					<button class="button">View more photo</button>
+				</div>
+			</div>
+			<div class="black-block">
+				<div class="component-2">
+					<div class="component-2__container-big">
+						<div class="absolute-title-block">
+							<hr>
+							<p class="absolute-title-text">
+								Make request
+							</p>
+						</div>
+						<div class="component-2__text-block">
+							<h3 class="title component-2__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+							<div class="component-2__description-block">
+								<p class="description component-2__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Aliquam ullamcorper eu mauris vitae posuere. Ut
+									at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.
+								</p>
+								<button data-popup="#popup" class="button component-2__button">Make request</button>
+							</div>
+						</div>
+						<ul class="gallary-component-2 component-2__gallary">
+							<li class="gallary-component-2__item">
+								<picture><source srcset="img/image4.webp" type="image/webp"><img src="img/image4.png" alt="img"></picture>
+							</li>
+							<li class="gallary-component-2__item">
+								<picture><source srcset="img/image2.webp" type="image/webp"><img src="img/image2.png" alt="img"></picture>
+							</li>
+							<li class="gallary-component-2__item">
+								<picture><source srcset="img/image1.webp" type="image/webp"><img src="img/image1.png" alt="img"></picture>
+							</li>
+							<li class="gallary-component-2__item">
+								<picture><source srcset="img/image3.webp" type="image/webp"><img src="img/image3.png" alt="img"></picture>
+							</li>
+							<li class="gallary-component-2__item">
+								<picture><source srcset="img/image5.webp" type="image/webp"><img src="img/image5.png" alt="img"></picture>
+							</li>
+							<li class="gallary-component-2__item">
+								<picture><source srcset="img/image4.webp" type="image/webp"><img src="img/image4.png" alt="img"></picture>
+							</li>
+							<li class="gallary-component-2__item">
+								<picture><source srcset="img/image2.webp" type="image/webp"><img src="img/image2.png" alt="img"></picture>
+							</li>
+							<li class="gallary-component-2__item">
+								<picture><source srcset="img/image1.webp" type="image/webp"><img src="img/image1.png" alt="img"></picture>
+							</li>
+							<li class="gallary-component-2__item">
+								<picture><source srcset="img/image3.webp" type="image/webp"><img src="img/image3.png" alt="img"></picture>
+							</li>
+							<li class="gallary-component-2__item">
+								<picture><source srcset="img/image5.webp" type="image/webp"><img src="img/image5.png" alt="img"></picture>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="next-project-block">
+					<div class="one-project__container-big">
+						<p class="next-project">Next project</p>
+						<h3 class="title">Perfect proportions</h3>
+						<div class="picture">
+							<picture><source srcset="img/image14.webp" type="image/webp"><img src="img/image14.png" alt="img" class="img"></picture>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<button data-close type="button" class="popup__close"></button>
+			<div class="popup__content">
+
+				<form class="form-popup popup__form active" id="form" accept="#">
+					<div class="form-popup__first-block">
+						<h2 class="form-popup__title"></h2>
+						<ul class="form-popup__list">
+							<li class="form-popup__item">
+								<input class="form-popup__input-text" id="Name" type="text" placeholder=" ">
+								<label class="form-popup__name-input form-popup__absolute" for="Name">Name</label>
+							</li>
+							<li class="form-popup__item">
+								<input class="form-popup__input-text" id="LastName" type="text" placeholder=" ">
+								<label class="form-popup__name-input form-popup__absolute" for="LastName">Last name</label>
+							</li>
+							<li class="form-popup__item">
+								<input class="form-popup__input-text" id="Phone" type="tel" name="phone_number" placeholder=" ">
+								<label class="form-popup__name-input form-popup__absolute " for="Phone">Phone</label>
+							</li>
+							<li class="form-popup__item">
+								<input class="form-popup__input-text" id="YourCity" type="text" placeholder=" ">
+								<label class="form-popup__name-input form-popup__absolute" for="YourCity">Your city</label>
+							</li>
+							<li class="form-popup__item">
+								<input class="form-popup__input-text _req _email" id="Email" type="email" placeholder=" ">
+								<label class="form-popup__name-input form-popup__absolute" for="Email">Email</label>
+							</li>
+							<li class="form-popup__item">
+								<select class="form-popup__input-text PropertyType" id="PropertyType" placeholder=" ">
+									<option selected class="btn default"></option>
+									<option class="btn" value="Type 1">Type 1</option>
+									<option class="btn" value="Type 2">Type 2</option>
+								</select>
+								<label class="form-popup__name-input form-popup__absolute" for="PropertyType">Property type</label>
+							</li>
+							<li class="form-popup__item-textarea form-popup__item">
+								<textarea class="form-popup__input-text" name="" id="YourComment" cols="30" rows="1" placeholder=" "></textarea>
+								<label class="form-popup__name-input form-popup__absolute" for="YourComment">Your comment</label>
+							</li>
+						</ul>
+					</div>
+					<div class="form-popup__second-block">
+						<div class="area-popup form-popup__area">
+							<p class="form-popup__name-input">Area(m2)</p>
+							<div class="area-popup__radio">
+								<label class="button-radio">to 50
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="button-radio">50-150
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="button-radio">150-250
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="button-radio">250-400
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="button-radio">400-600
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="button-radio">600-800
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="button-radio">800-1000
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="button-radio">1000+
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-popup__last-block">
+						<div class="form-popup__form-send">
+							<div class="add-file">
+								<input type="file" id="upload-file">
+								<button type="button" id="upload-btn">+</button>
+								<div class="add-file__text">
+									<p id="upload-text" class="add-file__title">Attach your file</p>
+									<p class="add-file__description">File size not more than 10 MB</p>
+								</div>
+							</div>
+							<button type="submit" class="button form-popup__button">Send Request</button>
+						</div>
+						<p class="form-popup__description">It is a long established fact that a reader will be distracted by
+							the readable content of a page <span class="underline">when looking</span> at its layout. The point of using Lorem Ipsum is
+							that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+							content here', making it look like readable English.</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="popup-complite" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<button data-close type="button" class="popup__close"></button>
+			<div class="popup__content">
+				<div class="popup-complite">
+					<h2 class="popup-complite__title">Thank you for your message!</h2>
+					<p class="popup-complite__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere.
+						Ut
+						at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.</p>
+					<button class="button popup-complite__button" data-popup="#popup">Send again</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.js"></script>
+</body>
+
+</html>
